@@ -71,6 +71,7 @@ body {
   width: 64px;
   position: relative;
   margin: 4px auto;
+  animation: slide-out 0.3s;
 }
 
 #switch button {
@@ -84,9 +85,12 @@ body {
   left: 0px;
 }
 
+#switch:hover {
+  outline: 8px solid var(--logos-hover);
+}
+
 .light #switch button {
-  right: 0px;
-  left: initial;
+  animation: slide-in 0.4s forwards;
 }
 
 #switch span {
@@ -163,5 +167,23 @@ body {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
