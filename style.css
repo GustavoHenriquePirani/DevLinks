@@ -40,6 +40,7 @@ body {
 }
 
 #principal {
+  width: 100%;
   max-width: 588px;
   margin: auto;
   margin-top: 56px;
