@@ -71,7 +71,6 @@ body {
   width: 64px;
   position: relative;
   margin: 4px auto;
-  animation: slide-out 0.4s;
 }
 
 #switch button {
@@ -83,6 +82,7 @@ body {
   position: absolute;
   z-index: 1;
   left: 0px;
+  animation: slide-out 0.4s;
 }
 
 #switch button:hover {
